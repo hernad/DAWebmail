@@ -33,7 +33,7 @@
 
     <!-- RestAPI URLs -->
     <string name="rest_url_login">https://zimbra.bring.out.ba/service/home/~/inbox.rss?limit=1</string>
-    <string name="rest_url_inbox">https://zimbra.bring.out.ba/home/~/inbox.json</string>
+    <string name="rest_url_inbox">https://zimbra.bring.out.ba/home/~/inbox/racuni.json</string>
     <string name="rest_url_sent">https://zimbra.bring.out.ba/home/~/sent.json</string>
     <string name="rest_url_trash">https://zimbra.bring.out.ba/home/~/trash.json</string>
     <string name="rest_url_view_webmail">https://zimbra.bring.out.ba/home/~/?id=</string>
