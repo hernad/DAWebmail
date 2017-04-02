@@ -50,6 +50,7 @@ public class RefreshInbox extends AsyncTask<Void, Void, Void> {
             result = restAPI.refresh(folder);
         else if (refreshType.equals(Constants.REFRESH_TYPE_LOAD_MORE))
             result = restAPI.loadMore(folder, 15);
+            
         refreshedEmails = restAPI.getNewEmails();
 
         return null;

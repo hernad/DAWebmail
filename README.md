@@ -8,7 +8,7 @@ An open source Android client for Zimbra Webmail.
 
 DAWebmail is an application developed for Zimbra Webmail users. This is the first exclusive Zimbra Webmail client for Android - Zimbra doesn't have an application of its own.
 
-DAWebmail is currently being tested and used extensively in [DA-IICT](https://webmail.daiict.ac.in/). The application has 1000 active users within the university. The application can be used by any organization that uses Zimbra as their email service, by changing a minimal number of Strings and URLs in the app configuration files.
+DAWebmail is currently being tested and used extensively in [DA-IICT](https://zimbra.bring.out.ba/). The application has 1000 active users within the university. The application can be used by any organization that uses Zimbra as their email service, by changing a minimal number of Strings and URLs in the app configuration files.
 
 - View & Read Webmails - Even when offline. All mails are stored locally and can be viewed even when not connected to a network
 - Download webmail attachments
@@ -58,7 +58,7 @@ DAWebmail can be used by any organization that uses Zimbra Webmail as their emai
 The following are the changes to be made to `res/values/strings.xml`
 
 - `webmail_domain` - The domain that follows post your Zimbra webmail ID (eg., 201301431@**daiict.ac.in**)
-- `webmail_domain_url` - The domain of your Webmail service (eg., **https://webmail.daiict.ac.in/**)
+- `webmail_domain_url` - The domain of your Webmail service (eg., **https://zimbra.bring.out.ba/**)
 
 And that's it :) DAWebmail is ready to run in your university/organization. Please write to me to get your university listed here.
 

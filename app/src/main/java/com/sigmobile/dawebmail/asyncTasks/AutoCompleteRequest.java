@@ -55,7 +55,7 @@ public class AutoCompleteRequest extends AsyncTask<Void, Void, Void> {
 
     private void fetchContacts() {
 
-        ZcsService zcsService = new ZcsService("https://webmail.daiict.ac.in/service/soap", 2, true);
+        ZcsService zcsService = new ZcsService("https://zimbra.bring.out.ba/service/soap", 2, true);
 
         AccountSelector accountSelector = new AccountSelector();
         accountSelector.setBy(AccountBy.OPT5_NAME);

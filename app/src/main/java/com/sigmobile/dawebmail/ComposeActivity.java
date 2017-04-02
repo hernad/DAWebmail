@@ -23,7 +23,7 @@ import com.sigmobile.dawebmail.asyncTasks.SendMail;
 import com.sigmobile.dawebmail.asyncTasks.SendMailListener;
 import com.sigmobile.dawebmail.database.User;
 import com.sigmobile.dawebmail.database.CurrentUser;
-import com.sigmobile.dawebmail.network.AnalyticsAPI;
+//import com.sigmobile.dawebmail.network.AnalyticsAPI;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -125,7 +125,7 @@ public class ComposeActivity extends AppCompatActivity implements SendMailListen
     }
 
     private void sendWebmail() {
-        AnalyticsAPI.sendValueLessAction(AnalyticsAPI.ACTION_COMPOSE, getApplicationContext());
+        //AnalyticsAPI.sendValueLessAction(AnalyticsAPI.ACTION_COMPOSE, getApplicationContext());
         new SendMail(currentUser, ComposeActivity.this, getApplication(), et_subject.getText().toString(), et_content.getText().toString(), et_to.getText().toString(), checkBox_imp.isChecked()).execute();
     }
 

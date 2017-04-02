@@ -20,7 +20,7 @@ import com.sigmobile.dawebmail.asyncTasks.Login;
 import com.sigmobile.dawebmail.asyncTasks.LoginListener;
 import com.sigmobile.dawebmail.database.CurrentUser;
 import com.sigmobile.dawebmail.database.User;
-import com.sigmobile.dawebmail.network.AnalyticsAPI;
+//import com.sigmobile.dawebmail.network.AnalyticsAPI;
 import com.sigmobile.dawebmail.utils.Settings;
 
 import butterknife.Bind;
@@ -68,9 +68,9 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
                     enteredUsername = usernameField.getText().toString().trim();
                     enteredPassword = passwordField.getText().toString();
 
-                    if (!enteredUsername.contains("@" + getString(R.string.webmail_domain))) {
-                        enteredUsername = enteredUsername + "@" + getString(R.string.webmail_domain);
-                    }
+                    //if (!enteredUsername.contains("@" + getString(R.string.webmail_domain))) {
+                    //    enteredUsername = enteredUsername + "@" + getString(R.string.webmail_domain);
+                    //}
 
                     if (User.doesUserExist(enteredUsername, enteredPassword)) {
                         Snackbar.make(view, getString(R.string.snackbar_login_user_exist), Snackbar.LENGTH_LONG).show();
@@ -164,7 +164,8 @@ public class LoginActivity extends AppCompatActivity implements LoginListener {
             usernameField.setText(enteredUsername);
             passwordField.setText("");
         } else {
-            AnalyticsAPI.sendLoginDataToFirebase(user);
+
+            //AnalyticsAPI.sendLoginDataToFirebase(user);
             Snackbar.make(loginButtonContainer, getString(R.string.snackbar_login_successful), Snackbar.LENGTH_LONG).show();
             user = User.createNewUser(user);
             CurrentUser.setCurrentUser(user, getApplicationContext());
